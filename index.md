@@ -13,6 +13,11 @@
       </p>
 
    </div>  
+   /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
  
   </body>
 </html>
