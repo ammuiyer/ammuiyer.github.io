@@ -9,8 +9,9 @@
 </div>
     <p>
          This is the  <a href="https://www.tutorialspoint.com/How-to-Insert-Hyperlink-in-HTML-Page#:~:text=To%20make%20a%20hyperlink%20in,a%20href%3D%E2%80%9D%20%E2%80%9D%3E.">link</a> 
-       <script src="data.js"></script>
       </p>
-   
+   <div>
+     <script src="data.js"></script>
+    </div>
   </body>
 </html>
