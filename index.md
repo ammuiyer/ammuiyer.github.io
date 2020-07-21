@@ -14,7 +14,7 @@
     <p>
          This is the  <a href="https://www.tutorialspoint.com/How-to-Insert-Hyperlink-in-HTML-Page#:~:text=To%20make%20a%20hyperlink%20in,a%20href%3D%E2%80%9D%20%E2%80%9D%3E.">link</a> 
       </p>
- /* Add a black background color to the top navigation */
+
 .topnav {
   background-color: #333;
   overflow: hidden;
