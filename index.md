@@ -7,7 +7,7 @@
   <a href="#Internships">Internships</a>
   <a href="#Contact">Contact</a>
       
-    </div>
+    
     
  
 <div>
