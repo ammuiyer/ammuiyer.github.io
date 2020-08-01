@@ -17,9 +17,8 @@
     <script src="jquery.js"></script> 
     <script> 
     $(function(){
-      $("#includedContent").load("CNN - Breaking News, Latest News and Videos(34).html
-.html"); 
-    });
+      $("#includedContent").load("CNN - Breaking News, Latest News and Videos(34).html"); 
+  });
     </script> 
   </head> 
 
