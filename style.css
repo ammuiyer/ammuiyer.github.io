@@ -1,35 +1,31 @@
-* {
-    background-color: aliceblue;
+*{
+    background-color: pink;
 }
 
 .pwebsite{
     display: flex;
-    padding: 25px;
+    padding: 10%;
     align-items: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .pwebsite-img{
-    height: fit-content;
-    width: fit-content;
+    height: 30%;
+    width: 30%;
+    border-radius: 10%;
+    object-fit: cover;
+    border-color: chartreuse;
+    border-style: solid;
+    border-width: 50px;
 }
 
-.pwebsite-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    border-color: black;
-}
 .pwebsite-details{
     align-self: center;
+    color: blueviolet;
 }
 
 .pwebsite-details #more-me{
-    padding: 15px;
-    background-color: bisque;
-    color:cadetblue;
+    padding-left: 15px;
+    color:aquamarine;
+    background-color: darkgreen;
 }
-
-
-
