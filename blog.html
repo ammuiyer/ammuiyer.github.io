@@ -22,7 +22,7 @@
 
     <div class="container">
         <section>
-            <h1>Trust, but Verify</h1>
+            <h1 id="blog-title">Trust, but Verify</h1>
             <p>Unverified thoughts of an honest user.</p>
         </section>
 
@@ -34,7 +34,7 @@
         </section>
 
         <section id="blog-post" style="display: none;">
-            <a href="blog.html" id="back-link" style="display: inline-block; margin-bottom: 2rem; color: #666;">← Back to all posts</a>
+            <a href="blog.html" id="back-link" style="display: inline-block; margin-bottom: 2rem; color: #666;" onclick="document.getElementById('blog-title').classList.remove('post-viewing'); return true;">← Back to all posts</a>
             <div id="post-content"></div>
         </section>
     </div>
@@ -52,30 +52,10 @@
         const postsData = {
             'gradadmissions.md': `# Thoughts on Taking the Leap of Faith: An Idiot's Guide to Graduate School Admissions
 
-**Date:** January 2025
+**Date:** December 2025
 
-This is an example blog post written in Markdown. You can easily edit this file or create new ones in the \`posts/\` directory.
-
-## Features
-
-- Write in Markdown for easy editing
-- Simple and clean formatting
-- Easy to add new posts
-
-## How to Add a New Post
-
-1. Create a new \`.md\` file in the \`posts/\` directory
-2. Name it something descriptive (e.g., \`my-thoughts-on-cryptography.md\`)
-3. Write your post in Markdown
-4. The blog page will automatically pick it up!
-
-You can use all standard Markdown features:
-- **Bold text**
-- *Italic text*
-- [Links](https://example.com)
-- Lists
-- Code blocks
-- And more!
+First and foremost, there is a *ton* of advice on the internet. You are probably better off reading through those if you have specific questions you want answered. If however, you have decided to continue, I'd like to emphasize that this is merely my opinion, and it should be taken with plenty of salt. I am not resposible if you do not get into MIT. 
+<!-- I have shortlisted a few below.   -->
 
 `
         };
@@ -103,6 +83,7 @@ You can use all standard Markdown features:
             document.getElementById('post-content').innerHTML = html;
             document.getElementById('blog-list').style.display = 'none';
             document.getElementById('blog-post').style.display = 'block';
+            document.getElementById('blog-title').classList.add('post-viewing');
         }
 
         function renderPostList() {
@@ -125,6 +106,8 @@ You can use all standard Markdown features:
             loadPost(postName);
         } else {
             renderPostList();
+            // Remove the class if viewing the list
+            document.getElementById('blog-title').classList.remove('post-viewing');
         }
     </script>
 </body>

@@ -74,6 +74,12 @@ h1 {
     margin-bottom: 1rem;
     color: #1a1a1a;
     line-height: 1.2;
+    transition: font-size 0.3s ease;
+}
+
+/* Blog title when viewing a post */
+#blog-title.post-viewing {
+    font-size: 1.5rem;
 }
 
 h2.title {
@@ -475,6 +481,10 @@ i, em {
         font-size: 2rem;
     }
     
+    #blog-title.post-viewing {
+        font-size: 1.2rem;
+    }
+    
     h2.title {
         font-size: 1.5rem;
     }
@@ -499,6 +509,10 @@ i, em {
     
     h1 {
         font-size: 1.75rem;
+    }
+    
+    #blog-title.post-viewing {
+        font-size: 1rem;
     }
     
     h2.title {
