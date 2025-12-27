@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>Blog - Meenakshi Iyer</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Meenakshi Iyer</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="advice.html">Advice</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h1>Trust, but Verify</h1>
+            <p>Unverified thoughts of an honest user.</p>
+        </section>
+
+        <section id="blog-list">
+            <h2 class="title">Posts</h2>
+            <div id="posts-container">
+                <p>Loading posts...</p>
+            </div>
+        </section>
+
+        <section id="blog-post" style="display: none;">
+            <a href="blog.html" id="back-link" style="display: inline-block; margin-bottom: 2rem; color: #666;">← Back to all posts</a>
+            <div id="post-content"></div>
+        </section>
+    </div>
+
+    <script>
+        // Configure marked.js
+        marked.setOptions({
+            breaks: true,
+            gfm: true
+        });
+
+        // Blog posts data - embedded directly in HTML
+        // This allows it to work when opening the file directly (file:// protocol)
+        // To update: run python sync-blog.py or manually copy markdown content here
+        const postsData = {
+            'gradadmissions.md': `# Thoughts on Taking the Leap of Faith: An Idiot's Guide to Graduate School Admissions
+
+**Date:** January 2025
+
+This is an example blog post written in Markdown. You can easily edit this file or create new ones in the \`posts/\` directory.
+
+## Features
+
+- Write in Markdown for easy editing
+- Simple and clean formatting
+- Easy to add new posts
+
+## How to Add a New Post
+
+1. Create a new \`.md\` file in the \`posts/\` directory
+2. Name it something descriptive (e.g., \`my-thoughts-on-cryptography.md\`)
+3. Write your post in Markdown
+4. The blog page will automatically pick it up!
+
+You can use all standard Markdown features:
+- **Bold text**
+- *Italic text*
+- [Links](https://example.com)
+- Lists
+- Code blocks
+- And more!
+
+`
+        };
+
+        // Posts metadata - add new posts here
+        const posts = [
+            { 
+                file: 'gradadmissions.md', 
+                title: 'Thoughts on Taking the Leap of Faith: An Idiot\'s Guide to Graduate School Admissions', 
+                date: 'December 2025' 
+            }
+        ];
+
+        // Get post name from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const postName = urlParams.get('post');
+
+        function loadPost(filename) {
+            const markdown = postsData[filename];
+            if (!markdown) {
+                document.getElementById('post-content').innerHTML = '<p>Post not found.</p>';
+                return;
+            }
+            const html = marked.parse(markdown);
+            document.getElementById('post-content').innerHTML = html;
+            document.getElementById('blog-list').style.display = 'none';
+            document.getElementById('blog-post').style.display = 'block';
+        }
+
+        function renderPostList() {
+            const container = document.getElementById('posts-container');
+            if (posts.length === 0) {
+                container.innerHTML = '<p>No posts yet. Add posts to the <code>posts</code> array in blog.html!</p>';
+                return;
+            }
+
+            container.innerHTML = posts.map(post => `
+                <div class="blog-post-item">
+                    <h3><a href="?post=${post.file}">${post.title}</a></h3>
+                    <div class="blog-post-date">${post.date}</div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize page
+        if (postName) {
+            loadPost(postName);
+        } else {
+            renderPostList();
+        }
+    </script>
+</body>
+</html>

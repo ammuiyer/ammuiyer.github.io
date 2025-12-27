@@ -1,27 +1,507 @@
-*{
-    background-color: rgb(208, 227, 236);
-    
-}
-.img{
-    height: 50%;
-    border-radius: 5%;
-    object-fit: cover;
-    border-width: 10px;
-    border-color: pink;
-    border-style: solid;
+/* Modern Minimalist Design - Inspired by showlit */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.pwebsite{
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    padding-top: 60px; /* Space for fixed nav */
+}
+
+/* Fixed Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+nav .nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav .nav-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+nav .nav-links a:hover {
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+h2.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h2.title:first-of-type {
+    margin-top: 0;
+}
+
+h2.subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Profile Section */
+.profile-header {
     display: flex;
     align-items: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-.pwebsite-resume{
-    padding: 15px;
-    color: yellow;
-    background-color: orangered;
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
 }
 
+.profile-info {
+    flex: 1;
+}
 
+.profile-info h1 {
+    margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Definition Lists */
+dl {
+    margin-bottom: 2rem;
+}
+
+dt {
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* News/Updates */
+.news-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Goals List */
+.goals-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.goals-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.goals-list li:last-child {
+    border-bottom: none;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 3rem;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 1rem;
+    color: #555;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+
+/* Italic Text */
+i, em {
+    color: #777;
+    font-style: italic;
+}
+
+/* Blog Styles */
+.blog-post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-post-item:last-child {
+    border-bottom: none;
+}
+
+.blog-post-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-item h3 a {
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.blog-post-item h3 a:hover {
+    color: #0066cc;
+}
+
+.blog-post-date {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Markdown Content Styling */
+#post-content {
+    line-height: 1.8;
+}
+
+#post-content h1 {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#post-content h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#post-content h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+#post-content p {
+    margin-bottom: 1.25rem;
+    color: #555;
+}
+
+#post-content ul, #post-content ol {
+    margin-bottom: 1.25rem;
+    padding-left: 2rem;
+}
+
+#post-content li {
+    margin-bottom: 0.5rem;
+}
+
+#post-content code {
+    background-color: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    color: #d14;
+}
+
+#post-content pre {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 1.25rem;
+}
+
+#post-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #333;
+}
+
+#post-content blockquote {
+    border-left: 4px solid #e0e0e0;
+    padding-left: 1rem;
+    margin-left: 0;
+    margin-bottom: 1.25rem;
+    color: #666;
+    font-style: italic;
+}
+
+#post-content a {
+    color: #0066cc;
+}
+
+#post-content strong {
+    font-weight: 600;
+    color: #333;
+}
+
+#post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+#post-content hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2rem 0;
+}
+
+/* Image Container */
+.image-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dictionary Entry */
+.dictionary-entry {
+    padding: 2rem 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.dictionary-word {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.dictionary-pronunciation {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+.dictionary-pos {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.dictionary-definition {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.dictionary-example {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .dictionary-word {
+        font-size: 1.5rem;
+    }
+    
+    .dictionary-entry {
+        padding: 1.5rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+    
+    nav .nav-container {
+        padding: 0 1rem;
+    }
+    
+    nav .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        padding: 2rem 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2.title {
+        font-size: 1.5rem;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .nav-links {
+        gap: 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2.title {
+        font-size: 1.3rem;
+    }
+}
