@@ -10,7 +10,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #ffffff;
+    background-color: #f3fbff;
     padding-top: 60px; /* Space for fixed nav */
 }
 
@@ -20,11 +20,9 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #f3fbff;
     padding: 1rem 0;
     z-index: 1000;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 nav .nav-container {
@@ -47,6 +45,7 @@ nav .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
+    align-items: center;
 }
 
 nav .nav-links a {
