@@ -387,6 +387,39 @@ i, em {
     margin: 2rem 0;
 }
 
+/* Footnotes */
+#post-content sup {
+    font-size: 0.75em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+#post-content .footnote-ref {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#post-content .footnote-ref:hover {
+    text-decoration: underline;
+}
+
+#post-content h3 {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+#post-content .footnote-backref {
+    color: #0066cc;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+#post-content .footnote-backref:hover {
+    text-decoration: underline;
+}
+
 /* Image Container */
 .image-container {
     margin-top: 2rem;
