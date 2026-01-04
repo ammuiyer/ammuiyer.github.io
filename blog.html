@@ -85,6 +85,7 @@
         // This allows it to work when opening the file directly (file:// protocol)
         // To update: run python sync-blog.py or manually copy markdown content here
         const postsData = {
+            'acting.md': ``,
             'confidence.md': ``,
             'gradadmissions.md': `# Thoughts on Taking the Leap of Faith: An Idiot's Guide to Surviving Graduate School Admissions
 
@@ -182,6 +183,11 @@ As I reflect on the whole admissions process, it is evident that this itself is 
 
         // Posts metadata - add new posts here
         const posts = [
+            { 
+                file: 'acting.md', 
+                title: 'How Do You Know If An Actor Is Acting Well? Thoughts on Viewing Cinema as Art', 
+                date: 'January 2025' 
+            },
             { 
                 file: 'confidence.md', 
                 title: 'How to Convert External Validation to Internal Validation? Thoughts on Confidence, Imposter Syndrome, and Self-Perception', 
