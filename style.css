@@ -212,6 +212,7 @@ dd {
 .goals-list {
     list-style: none;
     margin-left: 0;
+    padding-left: 1.5rem;
 }
 
 .goals-list li {
@@ -259,6 +260,11 @@ section:last-child {
 i, em {
     color: #777;
     font-style: italic;
+}
+
+/* Movie Rating Indentation */
+.rating {
+    margin-left: 0.5rem;
 }
 
 /* Blog Styles */
