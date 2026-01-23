@@ -84,6 +84,16 @@ It goes without saying that the admissions process is Not Fun. Essentially, you 
 
 Amongst all the admissions talk online, people do not really mention this as a struggle of this process, but I am certain I am not the only one who experienced this. Unfortunately, I do not have a lot of advice on dealing with this besides finding an outlet and blocking yourself from opportunities to compare. I hope this is some validation of your feelings if you are in the same boat :) If you are not, kudos to you! 
 
+### Anticipation of Results
+
+I do not have solid advice on how to survive the subsequent period from Jan - April. All I know is that without a routine, it is easy to spend all your time thinking about whether or not you got in (I spent my whole winter break going slightly insane over this). In any case, perhaps the following helps marginally. 
+
+Try to limit how often you check your email. Contrary to popular beleif, 'getting your emails over with' first thing in the morning is *not* a good idea, especially if you do not work in corporate. Allow yourself to check only after midday. I turned off phone notifications for Gmail using Screentime Limits. Sometimes I check on my laptop, but I really try not to.
+
+
+
+
+
 
 ### ~~Surviving~~ Thriving 
 
