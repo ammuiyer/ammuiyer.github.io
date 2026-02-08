@@ -86,11 +86,11 @@ Amongst all the admissions talk online, people do not really mention this as a s
 
 ### Anticipation of Results
 
-I do not have solid advice on how to survive the subsequent period from Jan - April. All I know is that without a routine, it is easy to spend all your time thinking about whether or not you got in (I spent my whole winter break going slightly insane over this). In any case, perhaps the following helps marginally. 
+I do not have solid advice on how to survive the subsequent period from Jan - April. All I know is that without a routine, it is easy to spend all your time thinking about whether or not you got in (I spent my whole winter break going insane over this). In any case, perhaps the following helps marginally. 
 
 Try to limit how often you check your email. Contrary to popular belief, 'getting your emails over with' first thing in the morning is *not* a good idea, especially if you do not work in corporate. Allow yourself to check only after midday. I turned off phone notifications for Gmail using Screentime Limits. Sometimes I check on my laptop, but I really try not to. Do not, under any circumstances, check your portals. I promise you no school is notifying you via portal without emailing you first. At first, this is really difficult to do. However, once you build the habit of not checking your email in the morning, it tends to stick.
 
-
+After a particulary frustrating rejection recently, I felt upset even though I knew I didn't have a shot at the school, and I was wondering why. Contemplating further, I realized that an acceptance is more than an opportunity to pursue higher studies, but also validation in a sense. This is obvious, since the whole application process requires you to market yourself and your attributes as a package deal. When you do not get acceptances, it is natural to wonder if you did anything the right way at all. Somehow, recognizing that I wanted to get accepted by a school only for validation, and not because I really felt a connection to a PI there, helped me get over rejections much faster. 
 
 
 
