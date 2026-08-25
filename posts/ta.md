@@ -1,0 +1,1 @@
+Thoughts on Grading AI Slop: Possibly Impractical Solutions to Practical Problems
